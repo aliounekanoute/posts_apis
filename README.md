@@ -57,6 +57,21 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## How to access Swagger UI (in English)
+
+Once the app is running in development mode:
+
+1. Open your browser and go to: `http://localhost:3000/api/docs`
+2. You will see the Swagger UI interface, which allows you to:
+  - Browse all available endpoints.
+  - Test them directly from the browser.
+  - Use the Authorize button to paste your JWT token (received after login) and access protected routes.
+3.	Example flow in Swagger UI:
+  -	Register a new user (/auth/register)
+  - Login (/auth/login) → copy the token
+  - Click Authorize, paste Bearer <your_token>
+  - Now you can create posts, list them, update or delete your own posts.
+
 ## Deployment
 
 When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
